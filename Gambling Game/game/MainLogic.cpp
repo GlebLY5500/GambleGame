@@ -45,14 +45,16 @@ void menutype(int &num) {
 		cout << "+-------+" << endl;
 	}
 	cout << endl;
-	cout << "-(для управления используйте W и S)-" << endl;
+	cout << "-(для управления используйте W и S и Пробел для выбора)-" << endl;
 }
 
 
 int main() {
+	srand(time(NULL));
 	setlocale(LC_ALL, "Russian");
 	SetConsoleCP(1251);
-	int balance = 5000, menupoint=1;
+	const int startmoney = 1488;
+	int balance = startmoney, menupoint=1;
 	char key;
 
 	while (true) {
@@ -71,7 +73,6 @@ int main() {
 		if (key == ' ' && menupoint == 3) playRoulete(balance);
 		if (key == ' ' && menupoint == 4) break;
 	}
-
 
 	
 }
