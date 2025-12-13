@@ -1,26 +1,34 @@
-﻿Сборка начата 11.12.2025 20:51:05.
-Уровень детализации журнала: Normal.     1>Проект "C:\Users\Глеб\Desktop\Лёлис 6ПИ Лабораторные\Основы Программной Инженерии\Лаб 12 ПРОЕКТ\Gambling Game\game\game.vcxproj" в узле 2 (целевые объекты Build).
+﻿Сборка начата 13.12.2025 18:17:35.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" в узле 2 (целевые объекты Build).
      1>PrepareForBuild:
          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
        InitializeBuildStatus:
          Создание "x64\Debug\game.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "x64\Debug\game.tlog\unsuccessfulbuild".
        ClCompile:
-         A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt playBlackJack.cpp
+         A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt MainLogic.cpp playBlackJack.cpp
+         MainLogic.cpp
+     1>C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\MainLogic.cpp(53,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
          playBlackJack.cpp
+         Создание кода...
        Link:
-         A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Глеб\Desktop\Лёлис 6ПИ Лабораторные\Основы Программной Инженерии\Лаб 12 ПРОЕКТ\Gambling Game\x64\Debug\game.exe" /INCREMENTAL /ILK:"x64\Debug\game.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Глеб\Desktop\Лёлис 6ПИ Лабораторные\Основы Программной Инженерии\Лаб 12 ПРОЕКТ\Gambling Game\x64\Debug\game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Глеб\Desktop\Лёлис 6ПИ Лабораторные\Основы Программной Инженерии\Лаб 12 ПРОЕКТ\Gambling Game\x64\Debug\game.lib" /MACHINE:X64 x64\Debug\MainLogic.obj
+         A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.exe" /INCREMENTAL /ILK:"x64\Debug\game.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.lib" /MACHINE:X64 x64\Debug\MainLogic.obj
          x64\Debug\playBlackJack.obj
          x64\Debug\playRoulete.obj
          x64\Debug\playSlotMachine.obj
-         game.vcxproj -> C:\Users\Глеб\Desktop\Лёлис 6ПИ Лабораторные\Основы Программной Инженерии\Лаб 12 ПРОЕКТ\Gambling Game\x64\Debug\game.exe
+         game.vcxproj -> C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.exe
        FinalizeBuildStatus:
          Файл "x64\Debug\game.tlog\unsuccessfulbuild" удаляется.
          Обращение к "x64\Debug\game.tlog\game.lastbuildstate".
-     1>Сборка проекта "C:\Users\Глеб\Desktop\Лёлис 6ПИ Лабораторные\Основы Программной Инженерии\Лаб 12 ПРОЕКТ\Gambling Game\game\game.vcxproj" завершена (целевые объекты Build).
+     1>Сборка проекта "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
-    Предупреждений: 0
+
+       "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\MainLogic.cpp(53,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+
+    Предупреждений: 1
     Ошибок: 0
 
-Прошло времени 00:00:01.21
+Прошло времени 00:00:02.22

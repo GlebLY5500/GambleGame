@@ -12,23 +12,23 @@ void menutype(int &num) {
 		cout << "+-----------------+" << endl;
 		cout << "| Сыграть в слоты |" << endl;
 		cout << "+-----------------+" << endl;
-		cout << "  Сыграть в блекджек" << endl;
+		cout << "  Сыграть в 21" << endl;
 		cout << "  Сыграть в Рулетку" << endl;
 		cout << endl;
 		cout << "  Выйти" << endl;
 	}
 	if (num == 2) {
 		cout << "  Сыграть в слоты" << endl;
-		cout << "+--------------------+" << endl;
-		cout << "| Сыграть в блекджек |" << endl;
-		cout << "+--------------------+" << endl;
+		cout << "+--------------+" << endl;
+		cout << "| Сыграть в 21 |" << endl;
+		cout << "+--------------+" << endl;
 		cout << "  Сыграть в Рулетку" << endl;
 		cout << endl;
 		cout << "  Выйти" << endl;
 	}
 	if (num == 3) {
 		cout << "  Сыграть в слоты" << endl;
-		cout << "  Сыграть в блекджек" << endl;
+		cout << "  Сыграть в 21" << endl;
 		cout << "+-------------------+" << endl;
 		cout << "| Сыграть в Рулетку |" << endl;
 		cout << "+-------------------+" << endl;
@@ -37,7 +37,7 @@ void menutype(int &num) {
 	}
 	if (num == 4) {
 		cout << "  Сыграть в слоты" << endl;
-		cout << "  Сыграть в блекджек" << endl;
+		cout << "  Сыграть в 21" << endl;
 		cout << "  Сыграть в Рулетку" << endl;
 		cout << endl;
 		cout << "+-------+" << endl;
@@ -53,7 +53,7 @@ int main() {
 	srand(time(NULL));
 	setlocale(LC_ALL, "Russian");
 	SetConsoleCP(1251);
-	const int startmoney = 1488;
+	const int startmoney = 5000;
 	int balance = startmoney, menupoint=1;
 	char key;
 
@@ -65,8 +65,8 @@ int main() {
 		cout << endl;
 		menutype(menupoint);
 		key = _getch();
-		if (key == 'w' || key=='ц') menupoint--;
-		else if (key == 's' || key == 'ы') menupoint++;
+		if (key == 'w' || key=='ц'|| key == 'W' || key == 'Ц') menupoint--;
+		else if (key == 's' || key == 'ы' || key == 'S' || key == 'Ы') menupoint++;
 		system("cls");
 		if (key == ' ' && menupoint == 1) playSlotMachine(balance);
 		if (key == ' ' && menupoint == 2) playBlackJack(balance);
