@@ -44,16 +44,20 @@ void playGame(int &money) {
 	cout << "Сделайте свою ставку: ";
 	cin >> bet;
 	while (true) {
-		
+
 		if (bet > money) {
 			system("cls");
 			cout << "Некоректная ставка! Ставка не может быть больше вашего текущего баланса \n введите снова: " << endl;
 			cin >> bet;
+			cin.clear();
+			cin.ignore();
 		}
 		else if (bet == 0) {
 			system("cls");
 			cout << "Некоректная ставка! Ставка должна быть больше 0 \n введите снова: " << endl;
 			cin >> bet;
+			cin.clear();
+			cin.ignore();
 		}
 		else if (cin.fail() == true) {
 			system("cls");
@@ -181,6 +185,7 @@ void playGame(int &money) {
 void playBlackJack(int& money) {
 	char key;
 	while (true) {
+		if (money == 0) return;
 		cout << "+-----------------------+" << endl;
 		cout << "| Добро пожаловать в 21 |" << endl;
 		cout << "+-----------------------+" << endl;
