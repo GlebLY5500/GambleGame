@@ -1,15 +1,21 @@
-﻿Сборка начата 18.12.2025 00:20:30.
-Уровень детализации журнала: Normal.     1>Проект "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" в узле 2 (целевые объекты Build).
-     1>PrepareForBuild:
+﻿Сборка начата 22.12.2025 00:39:03.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" в узле 2 (целевые объекты Rebuild).
+     1>_PrepareForClean:
+         Файл "x64\Debug\game.tlog\game.lastbuildstate" удаляется.
+       PrepareForBuild:
          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
        InitializeBuildStatus:
          Создание "x64\Debug\game.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "x64\Debug\game.tlog\unsuccessfulbuild".
        ClCompile:
-         A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt MainLogic.cpp
+         A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt MainLogic.cpp playBlackJack.cpp playRoulete.cpp playSlotMachine.cpp
          MainLogic.cpp
      1>C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\MainLogic.cpp(53,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-     1>C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\MainLogic.cpp(83,10): warning C4566: символ, представленный универсальным именем символа "\u2665", невозможно представить в текущей кодовой странице (1251)
+         playBlackJack.cpp
+         playRoulete.cpp
+         playSlotMachine.cpp
+     1>C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\playSlotMachine.cpp(40,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+         Создание кода...
        Link:
          A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.exe" /INCREMENTAL /ILK:"x64\Debug\game.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.lib" /MACHINE:X64 x64\Debug\MainLogic.obj
          x64\Debug\playBlackJack.obj
@@ -19,16 +25,16 @@
        FinalizeBuildStatus:
          Файл "x64\Debug\game.tlog\unsuccessfulbuild" удаляется.
          Обращение к "x64\Debug\game.tlog\game.lastbuildstate".
-     1>Сборка проекта "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" завершена (целевые объекты Build).
+     1>Сборка проекта "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" завершена (целевые объекты Rebuild).
 
 Сборка успешно завершена.
 
-       "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" (целевой объект Build ) (1) ->
+       "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" (целевой объект Rebuild ) (1) ->
        (Целевой объект ClCompile) -> 
          C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\MainLogic.cpp(53,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-         C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\MainLogic.cpp(83,10): warning C4566: символ, представленный универсальным именем символа "\u2665", невозможно представить в текущей кодовой странице (1251)
+         C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\playSlotMachine.cpp(40,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 
     Предупреждений: 2
     Ошибок: 0
 
-Прошло времени 00:00:01.86
+Прошло времени 00:00:03.95
