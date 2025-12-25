@@ -47,17 +47,19 @@ void playGame(int &money) {
 
 		if (bet > money) {
 			system("cls");
-			cout << "Некоректная ставка! Ставка не может быть больше вашего текущего баланса \n введите снова: " << endl;
-			cin >> bet;
 			cin.clear();
 			cin.ignore();
+			cout << "Некоректная ставка! Ставка не может быть больше вашего текущего баланса \n введите снова: " << endl;
+			cin >> bet;
+			
 		}
 		else if (bet == 0) {
 			system("cls");
-			cout << "Некоректная ставка! Ставка должна быть больше 0 \n введите снова: " << endl;
-			cin >> bet;
 			cin.clear();
 			cin.ignore();
+			cout << "Некоректная ставка! Ставка должна быть больше 0 \n введите снова: " << endl;
+			cin >> bet;
+			
 		}
 		else if (cin.fail() == true) {
 			system("cls");
