@@ -2,6 +2,7 @@
 #include <iostream>
 #include <conio.h>
 #include <windows.h>
+#include <limits>
 using namespace std;
 
 void getRouleteRules() {
@@ -121,13 +122,13 @@ void playGameRoulete(int& balance) {
 
 	cout << "Вы выбрали: " << choice << endl;
 	if (choice == '6') {
-		cout << "Введите число на которое хотите поставить" << endl;
+		cout << "Введите число на которое хотите поставить (от 1 до 36)" << endl;
 		cin >> betnumber;
-		while ((betnumber > 36 && betnumber < 1) || cin.fail() == true) {
+		while ((betnumber > 36 || betnumber < 1) || cin.fail() == true) {
 			cout << "Вы ввели некоректно. Повторите ввод " << endl;
-			cin >> betnumber;
 			cin.clear();
-			cin.ignore();
+			cin.ignore(cin.rdbuf()->in_avail());
+			cin >> betnumber;
 		}
 	}
 	cout << endl;
@@ -135,24 +136,20 @@ void playGameRoulete(int& balance) {
 	cout << "\t Сделайте ставку: ";
 	cin >> bet;
 	while (true) {
-
+		
 		if (bet > balance) {
+			cin.clear();
+			cin.ignore(cin.rdbuf()->in_avail());
 			cout << "Некоректная ставка! Ставка не может быть больше вашего текущего баланса \n введите снова: " << endl;
 			cin >> bet;
 			
 		}
 		else if (bet <= 0) {
 			cin.clear();
-			cin.ignore();
-			cout << "Некоректная ставка! Ставка должна быть больше 0 \n введите снова: " << endl;
+			cin.ignore(cin.rdbuf()->in_avail());
+			cout << "Некоректная ставка!  \n введите снова: " << endl;
 			cin >> bet;
 			
-		}
-		else if (cin.fail() == true) {
-			cin.clear();
-			cin.ignore();
-			cout << "Некоректная ставка! Ставка должна быть числом \n введите снова: " << endl;
-			cin >> bet;
 		}
 		else {
 			cout << "Ваша ставка принята" << endl << endl;

@@ -1,4 +1,4 @@
-﻿Сборка начата 25.12.2025 17:03:19.
+﻿Сборка начата 25.12.2025 18:28:17.
 Уровень детализации журнала: Normal.     1>Проект "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" в узле 2 (целевые объекты Rebuild).
      1>_PrepareForClean:
          Файл "x64\Debug\game.tlog\game.lastbuildstate" удаляется.
@@ -14,7 +14,7 @@
          playBlackJack.cpp
          playRoulete.cpp
          playSlotMachine.cpp
-     1>C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\playSlotMachine.cpp(40,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+     1>C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\playSlotMachine.cpp(44,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
          Создание кода...
        Link:
          A:\programs\VisualStudio\VC\Tools\MSVC\14.44.35207\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.exe" /INCREMENTAL /ILK:"x64\Debug\game.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Глеб\Documents\GambleGame\Gambling Game\x64\Debug\game.lib" /MACHINE:X64 x64\Debug\MainLogic.obj
@@ -32,9 +32,9 @@
        "C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\game.vcxproj" (целевой объект Rebuild ) (1) ->
        (Целевой объект ClCompile) -> 
          C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\MainLogic.cpp(53,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-         C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\playSlotMachine.cpp(40,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+         C:\Users\Глеб\Documents\GambleGame\Gambling Game\game\playSlotMachine.cpp(44,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
 
     Предупреждений: 2
     Ошибок: 0
 
-Прошло времени 00:00:03.50
+Прошло времени 00:00:03.57

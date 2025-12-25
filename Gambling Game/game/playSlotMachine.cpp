@@ -34,26 +34,38 @@ void play_Slots(int& money)
     const int SIZE = 5;
 
     char s1, s2, s3;
-
+    cout << "СЛОТ-РУЛЕТКА\n";
+        cout << "Баланс: " << money << " монет\n\n";
+    cout << "Введите ставку: ";
+        cin >> stavka;
     while (play == 'y' || play == 'Y')
     {
+        
         srand(time(0));
 
         system("cls");
-
-        cout << "СЛОТ-РУЛЕТКА\n";
-        cout << "Баланс: " << money << " монет\n\n";
+        
         if (money == 0) return;
 
-        cout << "Введите ставку: ";
-        cin >> stavka;
+        
 
-        if (stavka <= 0 || stavka > money)
-        {
-            cout << "Неверная ставка!\n";
-            Sleep(2000);
+        if (stavka > money) {
+            system("cls");
+            cin.clear();
+            cin.ignore(cin.rdbuf()->in_avail());
+            cout << "Некоректная ставка! Ставка не может быть больше вашего текущего баланса \n введите снова: " << endl;
+            cin >> stavka;
             continue;
         }
+        else if (stavka <= 0) {
+            system("cls");
+            cin.clear();
+            cin.ignore(cin.rdbuf()->in_avail());
+            cout << "Некоректная ставка! \n введите снова: " << endl;
+            cin >> stavka;
+            continue;
+        }
+
 
         for (int i = 0; i < 20; i++)
         {
