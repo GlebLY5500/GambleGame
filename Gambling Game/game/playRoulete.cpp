@@ -6,12 +6,14 @@ using namespace std;
 
 void getRouleteRules() {
 	cout << "Правила игры:" << endl;
-	cout << "\t-Игрок делает ставку выбирая на какую цифру или цвет он хочет поставить жетоны" << endl;
-	cout << "\t-Машина крутиться, деньги мутятся" << endl;
+	cout << "\t-Игрок делает ставку выбирая на какую цифру, цвет или дюжину он хочет поставить" << endl;
+	cout << "\t-Рулетка крутится" << endl;
 	cout << "\t-Условия выигрыша/проигрыша:" << endl;
-	cout << "\t-Совпала цифра или цвет: х2" << endl;
-	cout << "\t-Совпали и цифра и цвет: х3" << endl;
-	cout << "\t-Ставка сдела" << endl;
+	cout << "\t-Совпал цвет: х2" << endl;
+	cout << "\t-Совпали дюжины: х3" << endl;
+	cout << "\t-Совпало число: х5" << endl;
+	cout << "\t-Совпал 0: х10" << endl;
+	cout << "\t-Промах - проигрыш" << endl;
 	cout << "Нажмите любую клавишу чтобы выйти..." << endl;
 	_getch();
 	system("cls");
@@ -109,11 +111,11 @@ void playGameRoulete(int& balance) {
 	cout << "----------Выигрыш х10----------" << endl;
 	cout << "\t(7) Ставка на 0 (zero)" << endl;
 	cout << endl;
-	cout << "Чтобы вернуться нажмите 0 (ноль)" << endl;
+	cout << "Чтобы вернуться нажмите другое" << endl;
 	cout << endl;
 	cout << "Сделайте выбор... " << endl;
 	choice = _getch();
-	if (choice == '0') { system("cls"); return; }
+	if (choice>'7'||choice<'1') { system("cls"); return; }
 
 	
 
@@ -139,7 +141,7 @@ void playGameRoulete(int& balance) {
 			cin >> bet;
 			
 		}
-		else if (bet == 0) {
+		else if (bet <= 0) {
 			cin.clear();
 			cin.ignore();
 			cout << "Некоректная ставка! Ставка должна быть больше 0 \n введите снова: " << endl;

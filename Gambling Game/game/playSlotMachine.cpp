@@ -43,14 +43,7 @@ void play_Slots(int& money)
 
         cout << "СЛОТ-РУЛЕТКА\n";
         cout << "Баланс: " << money << " монет\n\n";
-
-        if (money <= 0)
-        {
-            cout << "Баланс закончился!\n";
-            Sleep(2000);
-            break;
-
-        }
+        if (money == 0) return;
 
         cout << "Введите ставку: ";
         cin >> stavka;

@@ -53,7 +53,7 @@ void playGame(int &money) {
 			cin >> bet;
 			
 		}
-		else if (bet == 0) {
+		else if (bet <= 0) {
 			system("cls");
 			cin.clear();
 			cin.ignore();
